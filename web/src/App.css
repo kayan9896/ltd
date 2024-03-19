@@ -1,0 +1,91 @@
+.games-section {
+   padding: 10%;
+   }
+.games-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+   }
+.game-item {
+     text-align: center;
+   }
+.game-item img {
+     width: 60%;
+     height: 80%;
+   }
+
+
+#contact {
+  background: #f9f9f9; /* Light grey background */
+  padding: 5%;
+  width: 90%;
+  border-radius: 8px; /* Rounded corners for the form */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 40%; /* Set a max-width for the form */
+  margin: auto;
+  align-items: center;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 5%; /* Space between fields */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px; /* Rounded corners for the input fields */
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+#contact textarea {
+  width: 70%;
+  height: 100px; /* Set a fixed height for the textarea */
+  resize: none; /* Disable resizing of the textarea */
+}
+
+#contact button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 14px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size for better readability */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  width: 30%;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff; /* or any color you prefer */
+  padding: 0 20px;
+}
+
+
+nav button, nav a {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 18px; /* Adjust size as needed */
+  text-decoration: none;
+  color: #333; /* or any color you prefer */
+  cursor: pointer;
+}
+
+nav button:hover, nav a:hover {
+  color: #25c70c; /* or any color you prefer */
+}
