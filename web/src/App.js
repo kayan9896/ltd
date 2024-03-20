@@ -18,11 +18,12 @@ function App() {
       <div>
         <nav>
           <h1>PEASY</h1>
+          <div>
           <button onClick={() => scrollToRef(gamesRef)}>Games</button>
           <button onClick={() => scrollToRef(aboutRef)}>About</button>
           <button onClick={() => scrollToRef(contactRef)}>Contact</button>
           <Link to="/games">Careers</Link>
-          
+          </div>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
@@ -34,6 +35,10 @@ function App() {
           <Route path="/"
             element={/* Sections with refs */
             <div>
+            <div style={{paddingTop:'16%',paddingBottom:'8%',color:'#fff',textAlign:'center'}}>
+            <h1>Welcome to PEASY!</h1>
+            <h1>EASY-PEASY!</h1>
+            </div>
             <div ref={gamesRef}>
               <Games/>
             </div>

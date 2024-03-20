@@ -15,9 +15,15 @@ const gamesData = [
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Minesweeper_9x9_10_example_16.png',
     gameLink: 'https://minesweeper-rhgf.onrender.com'
   },
+  {
+    name: 'Sudoku',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg/1200px-Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png',
+    gameLink: 'https://sudoku-jrac.onrender.com'
+  },
 ];
   return (
     <div className="games-section">
+      <h1 style={{marginBottom:'4%'}}>Games</h1>
       <div className="games-grid">
         {gamesData.map((game, index) => (
           <div key={index} className="game-item">
@@ -31,22 +37,5 @@ const gamesData = [
     </div>
   );
 };
-
-// Add CSS for the grid layout
-// .games-section {
-//   padding: 20px;
-// }
-// .games-grid {
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   gap: 20px;
-// }
-// .game-item {
-//   text-align: center;
-// }
-// .game-item img {
-//   width: 100%;
-//   height: auto;
-// }
 
 export default Games;

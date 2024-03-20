@@ -1,5 +1,38 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Keep it behind all other content */
+    background-image: url('https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2021-06/software-development-specialist.jpg?itok=D8qgVwxb');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.background-image::before {
+  content: ''; /* Pseudo-element content should be empty */
+  display: block; /* Make the pseudo-element behave like a block */
+  position: fixed; /* Position absolutely within the body */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.550); /* Semi-transparent black background */
+  pointer-events: none; /* Allows clicks to pass through to the body */
+}
+
+#about{
+  padding: 10%;
+  color: #fff;
+}
+
 .games-section {
-   padding: 10%;
+   padding: 2% 10%;
+   text-align: center;
+   color: #fff;
+   background-color: #1a1a1a;
    }
 .games-grid {
      display: grid;
@@ -12,17 +45,19 @@
 .game-item img {
      width: 60%;
      height: 80%;
+     border-radius: 7px;
    }
 
 
 #contact {
-  background: #f9f9f9; /* Light grey background */
+  background: #1a1a1a; /* Light grey background */
   padding: 5%;
   width: 90%;
   border-radius: 8px; /* Rounded corners for the form */
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
 }
 
 #contact form {
@@ -70,8 +105,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff; /* or any color you prefer */
-  padding: 0 20px;
+  background: #111; /* or any color you prefer */
+  padding: 0 3%;
+  border-bottom: #b3b2b2 0.5px solid;
+  position:fixed;
+  width: 94%;
+  color: #fff;
 }
 
 
@@ -82,10 +121,29 @@ nav button, nav a {
   margin: 0 10px;
   font-size: 18px; /* Adjust size as needed */
   text-decoration: none;
-  color: #333; /* or any color you prefer */
+  color: #fff; /* or any color you prefer */
   cursor: pointer;
 }
 
 nav button:hover, nav a:hover {
   color: #25c70c; /* or any color you prefer */
 }
+
+.footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text color */
+  padding: 20px 0; /* Padding top and bottom */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.footer-links, .footer-social, .footer p {
+  width: 25%;
+  margin: auto 4%;
+}
+.footer-links a, .footer-social a {
+  color: #fff; /* White link color */
+  margin: 0 10px; /* Margin between links */
+  text-decoration: none; /* No underline */
+}
+
