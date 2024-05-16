@@ -147,3 +147,41 @@ nav button:hover, nav a:hover {
   text-decoration: none; /* No underline */
 }
 
+/* Styles for screens with max-width of 768px (common for phones) */
+@media only screen and (max-width: 768px) {
+  /* Make the nav bar responsive */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  nav button, nav a {
+    font-size: 16px;
+    margin: 0.5rem;
+  }
+
+  /* Make the games grid responsive */
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Make the contact form responsive */
+  #contact form {
+    width: 100%;
+  }
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    width: 100%;
+  }
+
+  /* Make the footer responsive */
+  .footer {
+    flex-direction: column;
+  }
+  .footer-links, .footer-social, .footer p {
+    width: 100%;
+    margin: 1rem;
+  }
+}
+
